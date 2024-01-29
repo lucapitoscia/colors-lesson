@@ -1,0 +1,267 @@
+/** Global Classes **/
+.f-row{display: flex;}
+.g-row{display: grid;}
+.col-1{grid-template-columns: 100;}
+.col-2{grid-template-columns: 50% 50%;}
+.col-3{grid-template-columns: repeat(3, 1fr);   }
+.masthead{
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-position: bottom;
+}
+.btn{
+    border-color: #0E0E0E;
+    padding: 15px 40px;
+    border: solid 2px #0E0E0E;
+    text-decoration: none;
+    color: #0E0E0E;
+    transition: all .5s ease-in-out;
+}
+.btn-1{
+    border-color: #0E0E0E;
+    background-color: #f8f8f8;
+    color: #0E0E0E;
+    transition: all .5s ease-in-out;
+}
+btn-2{
+    border-color: #0E0E0E;
+    background-color: #f8f8f8;
+    color: #0E0E0E;
+    transition: all .5s ease-in-out;
+}
+.btn-1:hover{
+    border-color: #0E0E0E;
+    background-color: #0E0E0E;
+    color:#f8f8f8;
+}
+.btn-2:hover{
+    border-color: #0E0E0E;
+    background-color: #0E0E0E;
+    color:#f8f8f8;
+}
+.spacer{
+    width: 80%;
+    height: 10px;
+    margin: 30px 0px;
+}
+/** General Styling **/
+html{scroll-behavior: smooth;}
+body{margin: 0px; background-color: #f8f8f8;}
+h1, h2, h3, h4, h5, h6{font-family: "Poppins" , sans-serif;}
+p,a,li{
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+}
+header{
+    width: auto;
+    height: 115px;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+header div{
+    width: auto;
+    height: 105px;
+    flex-grow: 1;
+}
+header img{
+    width: auto;
+    height: 100%;
+}
+header menu{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+header li{padding: 0px 10px;}
+header li a{
+    color: #0E0E0E;
+    text-decoration: none;
+    transition: all .25s linear;
+}
+.masthead > div{
+    width: auto;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+@font-face {
+    font-family: customFont1;
+    src: url("../fonts/theory/Theory Gank.ttf");
+}
+
+/** Complementary **/
+/*
+** Colors:
+** #5B00BF (Main)
+** #65BF00 (Accent)
+** #F8F8F8 (Accent)
+** #0E0E0E (Accent)
+*/
+.complementary header menu li:hover a{
+    color:#65BF00;
+    text-decoration: underline;
+}
+.complementary .masthead{background-image: url(..//img/img-5.jpg);}
+.complementary .masthead > div{
+    background: rgb (91,0,191);
+    background: linear-gradient(130deg, rgba(91,0,191,1) 0%, rgbq(91,0,191,0.6) 45%, rgba(91,0,191,0.3) 100%);
+}
+.complementary .masthead h1{
+    font-size: 4em;
+    color: #f8f8f8;
+    text-shadow: 4px 3px 4px rgba(14,14,14,0.6);
+}
+.complementary section:nth-child(2){
+    padding: 5%;
+}
+.complementary section:nth-child(2) > h2{
+    color:#0E0E0E;
+    font-size: 26px;
+}
+.complementary section:nth-child(2) > h2 span{
+    color: #5B00BF;
+    font-size: 32px;
+    font-family: customFont1;
+}
+.complementary section:nth-child(3) > h3{
+    font-size: 28px;
+}
+.complementary section:nth-child(3) > div:nth-child(1){
+    background-image: url(../img/img-2.jpg);
+    background-size: cover;
+    background-position: right;
+}
+.complementary section:nth-child(3) > div:nth-child(2) {
+padding: 5%;
+}
+.complementary section:nth-child(4) > div{
+padding: 5%;
+display: flex;
+flex-direction: column; 
+align-items: center; 
+justify-content: center; 
+text-align: center;
+min-height: 350px;
+}
+.complementary section:nth-child(4) h4{
+    font-size: 26px;
+}
+.complementary section:nth-child(4) i{
+    font-size: 38px;
+}
+.complementary section:nth-child(4) > div:nth-child(odd){
+    background-color: #5B00BF;
+}
+.complementary section:nth-child(4) > div:nth-child(even){
+    background-color: #65BF00;
+    color: #f8f8f8;
+}
+/** Triadic **/
+/*
+** Colors:
+** #FF0052 (Main)
+** #47DD00 (Accent)
+** #0052FF (Accent)
+** #F8F8F8 (Accent)
+** #0E0E0E (Accent)
+*/
+.triatic header menu li:hover a{
+    color:#FF0052;
+    text-decoration: underline;
+}
+.triatic .masthead{background-image: url(../img/img-2.jpg);}
+.triatic .masthead > div{
+    background: rgb (255,0,82);
+    background: linear-gradient(130deg, rgba(255,0,82,0.8) 0%, rgbq(255,0,82,0.5) 45%, rgba(255,0,82,0.3) 100%);
+}
+
+.triatic .masthead h1{
+    font-size: 4em;
+    color: #f8f8f8;
+    text-shadow: 4px 3px 4px rgba(14,14,14,0.6);
+}
+
+.triatic section:nth-child(2) > h2{
+    color: #0E0E0E;
+    font-size: 26px;
+}
+/** Monochrome **/
+/*
+** Colors:
+** #0E0E0E (Main)
+** #282828 (Accent)
+** #F8F8F8 (Accent)
+*/
+.monochrome header menu li:hover a{
+    color: #282828;
+    text-decoration: underline;
+}
+.monochrome .masthead{background-image: url(..//img/img-2.jpg);}
+.monochrome .masthead > div{
+    background: rgb(14,14,14);
+    background: linear-gradient(90deg, rgba(14,14,14,0.7819721638655462) 0%, rgba(40,40,40,0.7847732843137255) 35%, rgba(71,71,71,0.779171043417367) 100%);
+}
+.monochrome .masthead h1{
+    font-size: 4em;
+    color: #f8f8f8;
+    text-shadow: 4px 3px 4px rgba(14,14,14,0.6);
+}
+.monochrome section:nth-child(2){
+    padding: 5%;
+}
+.monochrome section:nth-child(2) > h2{
+    color:#0E0E0E;
+    font-size: 26px;
+}
+.monochrome section:nth-child(2) > h2 span{
+    color: #282828;
+    font-size: 32px;
+    font-family: customFont1;
+}
+.monochrome section:nth-child(3) > h3{
+    font-size: 28px;
+}
+.monochrome section:nth-child(3) > div:nth-child(1) {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/img-2.jpg);
+    background-size: cover;
+    background-position: right;
+    transition: background-color 0.3s ease; 
+}
+.monochrome section:nth-child(3) > div:nth-child(1):hover {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../img/img-2.jpg);
+    background-size: cover;
+    background-position: right;
+}
+.monochrome section:nth-child(3) > div:nth-child(2) {
+padding: 5%;
+}
+.monochrome section:nth-child(4) > div{
+padding: 5%;
+display: flex;
+flex-direction: column; 
+align-items: center; 
+justify-content: center; 
+text-align: center;
+min-height: 350px;
+}
+.monochrome section:nth-child(4) h4{
+    font-size: 26px;
+}
+.monochrome section:nth-child(4) i{
+    font-size: 38px;
+}
+.monochrome section:nth-child(4) > div:nth-child(odd){
+    background-color: #282828;
+    color: #f8f8f8;
+}
+.monochrome section:nth-child(4) > div:nth-child(even){
+    background-color: #0E0E0E ;
+    color: #f8f8f8;
+}
+.space-primary, .space-secondary {
+    height: 10px; 
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(78, 77, 77));
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
